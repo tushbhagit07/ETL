@@ -1,0 +1,60 @@
+ insert into distributor values('d01','sujit koley','hooghly',9051296438,'sujit9@gmail.com');
+ insert into distributor values('d02','chiranjib das','midnapure',9051297438,'chiru9@gmail.com');
+ insert into distributor values('d03','joydip das','kolkata',9051299438,'joy9@gmail.com'); 
+ insert into distributor values('d04','pappu barik','hooghly',9058296438,'pappu9@gmail.com');
+
+
+
+
+insert into  mobile_master values('ime01','n_series','nokia','2011-02-23',2,12000,'d01');
+insert into  mobile_master values('ime02','guru','samsung','2011-03-23',2,4000,'d03'); 
+insert into  mobile_master values('ime03','sII','samsung','2011-01-23',2,23000,'d04');
+insert into  mobile_master values('ime04','galaxy','samsung','2011-02-23',2,11000,'d03');
+insert into  mobile_master values('ime05','andro','nokia','2011-02-23',2,12000,'d04');
+insert into  mobile_master values('ime06','sI','samsung','2011-03-23',2,23000,'d01'); 
+insert into  mobile_master values('ime07','n_series','nokia','2011-02-23',2,14000,'d03');
+insert into  mobile_master values('ime08','n_series','nokia','2011-03-23',2,15000,'d02');
+insert into  mobile_master values('ime09','adrosmart','sony','2011-02-23',2,16000,'d04');
+insert into  mobile_master values('ime10','galaxy','samsung','2011-02-23',2,27000,'d02');
+
+
+
+insert into mobile_specification values('ime01','2"','100 gm','led','5"',1000,4000,'yes','yes','yes','yes','2 mp','windows 7',24 );
+insert into mobile_specification values('ime02','1"','150 gm','led','4"',1000,8000,'no','no','no','no','2 mp','sybian',20 );
+insert into mobile_specification values('ime03','2"','110 gm','lcd','7"',1000,16000,'yes','yes','yes','yes','2 mp','android',20 );
+insert into mobile_specification values('ime04','2"','125 gm','led','5"',1000,4000,'yes','yes','yes','yes','2 mp','android',20 );
+insert into mobile_specification values('ime05','2"','135 gm','lcd','5"',1000,4000,'yes','yes','yes','yes','2 mp','android',24 );
+insert into mobile_specification values('ime06','2"','145 gm','lcd','6"',1000,8000,'yes','yes','yes','yes','2 mp','android',24 );
+insert into mobile_specification values('ime07','2"','200 gm','lcd','5"',1000,4000,'yes','yes','yes','yes','2 mp','windows 7',7 );
+insert into mobile_specification values('ime08','2"','175 gm','lcd','5"',1000,4000,'yes','yes','yes','yes','2 mp','windows 7',24 );
+insert into mobile_specification values('ime09','2"','109 gm','led','4"',1000,4000,'yes','yes','yes','yes','2 mp','android',7 );
+insert into mobile_specification values('ime10','2"','123 gm','led','5"',1000,8000,'yes','yes','yes','yes','2 mp','android',28 );
+
+
+
+
+
+ insert into customer_info values('c01','soumik pal','kolkata',905125345,'soumik9@gmail.com');
+ insert into customer_info values('c02','gourav das','kolkata',905125349,'gourav9@gmail.com');
+ insert into customer_info values('c03','sanjib chatterjee','kolkata',905125745,'sanjib9@gmail.com');
+ insert into customer_info values('c04','samar roy','nodia',905125349,'samar9@gmail.com');
+ insert into customer_info values('c05','krish mahoto','kolkata',905125395,'krish9@gmail.com');
+
+
+insert into sales_info values (1,'2012-12-23','ime01','12000',500,11500,'c02');
+insert into sales_info values (2,'2012-11-23','ime02','4000',500,3500,'c01');
+insert into sales_info values (3,'2012-10-23','ime01','12000',500,11500,'c03');
+insert into sales_info values (4,'2012-12-29','ime03','23000',1000,22000,'c01');
+insert into sales_info values (5,'2012-12-28','ime06','23000',1000,22000,'c05');
+insert into sales_info values (6,'2012-12-26','ime07','14000',500,13500,'c04');
+insert into sales_info values (7,'2012-12-25','ime08','15000',500,14500,'c02');
+insert into sales_info values (8,'2012-12-24','ime09','16000',1000,15000,'c04');
+
+
+
+
+
+
+
+
+
