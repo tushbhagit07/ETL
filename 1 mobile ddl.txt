@@ -1,0 +1,92 @@
+
+create table Distributor
+(
+Distributor_ID varchar(10) ,
+Distributor_Name varchar(20),
+Address varchar(100),
+Mobile decimal(23,0),
+Email varchar(30), 
+constraint pk_distributor primary key(Distributor_ID) 
+
+);
+
+create table Mobile_Master
+(
+IME_No varchar(10), 
+Model_Name varchar(20), 
+Manufacturer varchar(20), 
+Date_Of_Manufac date,
+Warranty_in_Years int,
+ Price decimal(7,2),
+ Distributor_ID varchar(10),
+constraint pk_ime primary key(IME_No),
+foreign key(Distributor_ID) references Distributor(Distributor_ID)
+);
+
+create table Mobile_Specification
+(
+IME_No varchar(10), 
+Dimension varchar(20), 
+Weight varchar(20),
+Display_Type varchar(20), 
+Display_Size varchar(20),
+Internal_mem_in_MB int,
+Memory_Card_Capacity_GB int, 
+Network_3G varchar(5),
+GPRS varchar(5), 
+Bluetooth varchar(5),
+Camera varchar(5), 
+Camera_Quality varchar(5) , 
+OS varchar(20), 
+Battery_Life_Hrs int ,
+constraint fk_ime foreign key(IME_No) references Mobile_Master(IME_No)
+);
+
+
+create table Customer_Info
+(
+Customer_ID varchar(10) ,
+Customer_Name varchar(20),
+Address varchar(100),
+Mobile  int,
+Email varchar(30),
+constraint pk_customer primary key(Customer_ID)
+);
+
+
+create  table Sales_Info
+(
+SalesId int,
+Sales_Date date,
+IME_No varchar(10),
+Price int,
+Discount int,
+Net_Amount int,
+Customer_ID varchar(10),
+constraint fk_sales primary key(SalesId),foreign key(Customer_ID) references Customer_Info(Customer_ID), foreign key(IME_No) 
+
+references Mobile_Master(IME_No)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
